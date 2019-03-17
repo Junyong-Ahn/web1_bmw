@@ -3,21 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>BMW</title>
+    <style media="screen">
+    body{
+      margin:0;
+    }
+    /*
+    block level element 전체를 사용하는 태그
+    */
+    h1 {
+      border-bottom: 5px gray solid;
+      font-size:45px;
+      padding:20px;
+      margin:0;
+        /*text-align: center;*/
+    }
+    #title{
+      text-align: left;
+    }
+    /*
+    Inline element 자기 자신 만큼 크기를 갖는 태그
+    */
+    ol{
+      /*
+      border-right: 5px solid gray;
+      padding: 20px;*/
+      /*width:80px; height: 500px;
+      margin:0;
+      display:inline-block;*/
+      padding:0;
+      margin:20px;
+    }
+    h2,p{
+      /*display:inline;*/
+      /*border:1px solid green;*/
+    }
+    #grid{
+      /*border:5px solid pink;*/
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+    </style>
   </head>
-
   <body>
-    <h1><a href="BMW.html">BMW</a></h1>
-    <ol>
-      <li><a href="1series.html" title="bmw 1 series specification">1 Series</a></li>
-      <li><a href="3series.html" title="bmw 3 series specification">3 Series</a></li>
-      <li><a href="4series.html" title="bmw 4 series specification">4 Series</a></li>
-    </ol>
-    <h2>BMW</h2>
 
-    <p><strong>Originally an initialism for Bayerische Motoren Werke in German, or <u>Bavarian Motor Works</u> in English) is a German multinational company</strong> which currently produces automobiles and motorcycles, and also produced aircraft engines until 1945.</p>
-    <p>The company was founded in 1916 and is headquartered in Munich, Bavaria. BMW produces motor vehicles in Germany, Brazil, China, India, South Africa, the United Kingdom, and the United States. In 2015, BMW was the world's twelfth largest producer of motor vehicles, with 2,279,503 vehicles produced.[2] The Quandt family are long-term shareholders of the company, with the remaining shares owned by public float.</p>
+      <h1><a href="BMW.html" id="title" style="color:green; text-decoration:none;">BMW</a></h1>
+      <div id="grid">
+        <div style="border-right:5px solid gray;"><ol>
+          <li><a style="display:inline;" href="1series.html" title="bmw 1 series specification">1 Series</a></li>
+          <li><a style="display:inline;" href="3series.html" title="bmw 3 series specification">3 Series</a></li>
+          <li><a style="display:inline;" href="4series.html" title="bmw 4 series specification">4 Series</a></li>
+        </ol></div>
 
-    <img src="logo.PNG" width="30%" height="30%"alt="">
+        <div><h2>BMW</h2>
+        <p><strong>Originally an initialism for Bayerische Motoren Werke in German, or <u>Bavarian Motor Works</u> in English) is a German multinational company<strong> which currently produces automobiles and motorcycles, and also produced aircraft engines until 1945.</p><br>
+        <p>The company was founded in 1916 and is headquartered in Munich, Bavaria. BMW produces motor vehicles in Germany, Brazil, China, India, South Africa, theUnited Kingdom, and the United States. In 2015, BMW was the world's twelfth largest producer of motor vehicles, with 2,279,503 vehicles produced.[2] The Quandtfamily are long-term shareholders of the company, with the remaining shares owned by public float.</p>
+
+        <img src="logo.png" alt="bmw image">
+        </div>
+      </div>
 
   </body>
 </html>
